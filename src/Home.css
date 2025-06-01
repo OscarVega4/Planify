@@ -1,0 +1,29 @@
+/* Home.css */
+
+.min-h-full {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.color {
+  background-color: #16a34a; /* Tailwind green-600 */
+}
+
+.content-section {
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+}
+
