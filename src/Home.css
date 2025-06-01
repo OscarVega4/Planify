@@ -1,29 +1,99 @@
-/* Home.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* fondo blanco */
+  overflow-x: hidden; /* evitar scroll horizontal */
+}
 
-.min-h-full {
+.wrapper {
+  width: 100vw;
   min-height: 100vh;
-  background-color: #f9fafb;
+  background-color: white; /* fondo blanco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #1a202c;
 }
 
-.color {
-  background-color: #16a34a; /* Tailwind green-600 */
+/* Navegación */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: rgba(22, 163, 74, 0.9); /* verde oscuro translúcido */
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.content-section {
-  margin-top: 2rem;
+.nav-logo img {
+  height: 80px;
+  width: auto;
 }
 
+.nav-button {
+  display: flex;
+  gap: 15px;
+}
+
+/* Botones principales verdes */
+.btn {
+  background-color: #16a34a; /* verde */
+  border: none;
+  border-radius: 30px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(22,163,74,0.5);
+}
+
+.btn:hover {
+  background-color: #15803d; /* verde más oscuro */
+  box-shadow: 0 4px 8px rgba(21,128,61,0.6);
+}
+
+.btn.white-btn {
+  background-color: #bbf7d0; /* verde clarito */
+  color: #166534; /* verde oscuro texto */
+  box-shadow: none;
+}
+
+.btn.white-btn:hover {
+  background-color: #86efac;
+}
+
+/* Cards */
 .card {
-  background-color: white;
-  border-radius: 0.75rem;
-  transition: box-shadow 0.3s ease;
+  background: #f0fdf4; /* verde muy clarito */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(22, 163, 74, 0.2);
+  color: #166534; /* verde oscuro */
+  margin: 5px;
 }
 
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-footer {
-  background-color: #e5e7eb; /* Tailwind gray-200 */
-}
+/* Tabla */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #166534; /
 
+}

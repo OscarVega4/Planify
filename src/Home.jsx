@@ -13,105 +13,69 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-full">
-      <nav className="color">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center"></div>
-            <div className="flex-shrink-0">
-              <a href="/">
-                <img
-                  className="h-40 w-25"
-                  src="/Logos/PLANify with rocco.png"
-                  alt="PLANIFY"
-                />
-              </a>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="/"
-                  className="rounded-md bg-green-600 px-3 py-2 text-sm font-medium text-white"
-                >
-                  Inicio
-                </a>
-                <a
-                  href="/proyectoss"
-                  className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-600 hover:text-white"
-                >
-                  Proyectos
-                </a>
-                <a
-                  href="/calendario"
-                  className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-600 hover:text-white"
-                >
-                  Calendario
-                </a>
-                <a
-                  href="/planes"
-                  className="rounded-md px-3 py-2 text-sm font-medium hover:bg-green-600 hover:text-white"
-                >
-                  Planes
-                </a>
-                <button
-                  onClick={handleLogout}
-                  className="rounded-md px-3 py-2 text-sm font-medium hover:bg-red-600 hover:text-white"
-                >
-                  Cerrar Sesión
-                </button>
-              </div>
-            </div>
-          </div>
+    <div className="wrapper">
+      <nav className="nav">
+        <div className="nav-logo">
+          <a href="/">
+            <img src="/Logos/PLANify with rocco.png" alt="PLANIFY" />
+          </a>
+        </div>
+        <div className="nav-button">
+          <button className="btn white-btn" onClick={() => navigate("/")}>Inicio</button>
+          <button className="btn" onClick={() => navigate("/proyectos")}>Proyectos</button>
+          <button className="btn" onClick={() => navigate("/calendario")}>Calendario</button>
+          <button className="btn" onClick={() => navigate("/planes")}>Planes</button>
+          <button className="btn" onClick={handleLogout}>Cerrar Sesión</button>
         </div>
       </nav>
 
-      <main>
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <section id="dashboard" className="content-section">
-            <div className="summary grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="card p-4 border rounded shadow">
-                <h2 className="text-lg font-semibold">Proyectos Activos</h2>
-                <p id="total-proyectos">0 proyectos en curso</p>
+      <main style={{ marginTop: "120px", width: "100%", display: "flex", justifyContent: "center" }}>
+        <div className="form-box">
+          <section id="dashboard">
+            <div className="summary" style={{ display: "flex", gap: "20px", justifyContent: "space-between" }}>
+              <div className="card">
+                <h2>Proyectos Activos</h2>
+                <p>0 proyectos en curso</p>
               </div>
-              <div className="card p-4 border rounded shadow">
-                <h2 className="text-lg font-semibold">Tareas Pendientes</h2>
-                <p id="total-tareas">5 tareas sin completar</p>
+              <div className="card">
+                <h2>Tareas Pendientes</h2>
+                <p>5 tareas sin completar</p>
               </div>
-              <div className="card p-4 border rounded shadow">
-                <h2 className="text-lg font-semibold">Próximas Fechas Límite</h2>
-                <p id="total-fechas-proximas">3 tareas con fechas próximas</p>
+              <div className="card">
+                <h2>Próximas Fechas Límite</h2>
+                <p>3 tareas con fechas próximas</p>
               </div>
             </div>
           </section>
 
-          <section id="proyectos" className="content-section mt-10">
-            <h2 className="text-xl font-semibold mb-4">Lista de Proyectos</h2>
-            <table className="w-full table-auto border-collapse border border-gray-300">
+          <section id="proyectos" style={{ marginTop: "40px", width: "100%" }}>
+            <h2>Lista de Proyectos</h2>
+            <table className="styled-table">
               <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-2 text-left">Nombre del Proyecto</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">Fecha de Inicio</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">Fecha de Vencimiento</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">Importancia</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">Acciones</th>
+                <tr>
+                  <th>Nombre del Proyecto</th>
+                  <th>Fecha de Inicio</th>
+                  <th>Fecha de Vencimiento</th>
+                  <th>Importancia</th>
+                  <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
-                {/* Aquí puedes mapear tus proyectos si los tienes */}
                 <tr>
-                  <td className="border border-gray-300 px-4 py-2">Proyecto de ejemplo</td>
-                  <td className="border border-gray-300 px-4 py-2">2024-06-01</td>
-                  <td className="border border-gray-300 px-4 py-2">2024-12-31</td>
-                  <td className="border border-gray-300 px-4 py-2">Alta</td>
-                  <td className="border border-gray-300 px-4 py-2">
-                    <button className="text-blue-600 hover:underline">Ver</button>
+                  <td>Proyecto de ejemplo</td>
+                  <td>2024-06-01</td>
+                  <td>2024-12-31</td>
+                  <td>Alta</td>
+                  <td>
+                    <button className="btn">Ver</button>
                   </td>
                 </tr>
               </tbody>
             </table>
             <button
-              onClick={() => navigate("/proyectoss")}
-              className="mt-4 rounded bg-green-600 px-4 py-2 text-white hover:bg-green-700"
+              onClick={() => navigate("/proyectos")}
+              className="btn white-btn"
+              style={{ marginTop: "20px" }}
             >
               Agregar Proyecto
             </button>
@@ -119,7 +83,7 @@ const Home = () => {
         </div>
       </main>
 
-      <footer className="text-center py-4 border-t mt-10">
+      <footer className="footer">
         <p>&copy; PLANIFY - 2025 (EEMSJ)</p>
       </footer>
     </div>

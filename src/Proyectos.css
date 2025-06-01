@@ -1,0 +1,177 @@
+.proyectos-page {
+  padding-top: 20px; /* espacio superior para que la barra no esté pegada arriba */
+}
+
+.proyectos-page .color {
+  background: linear-gradient(90deg, #95f003, #fffb03);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 900px;  /* ancho máximo centrado */
+  margin: 20px auto; /* espacio arriba/abajo y centrado horizontal */
+  width: 100%;       /* para ser responsivo */
+}
+
+.proyectos-page .color a img {
+  height: 40px;
+  width: auto;
+}
+
+.proyectos-page header.bg-white.shadow {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.proyectos-page header h1 {
+  color: #222;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.proyectos-page main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.proyectos-page h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Formulario */
+.proyectos-page form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.proyectos-page label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.proyectos-page input[type="text"],
+.proyectos-page input[type="date"],
+.proyectos-page select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1.8px solid #aaa;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.proyectos-page input[type="text"]:focus,
+.proyectos-page input[type="date"]:focus,
+.proyectos-page select:focus {
+  outline: none;
+  border-color: #95f003;
+  background: #fff;
+}
+
+.proyectos-page .flex {
+  display: flex;
+  gap: 20px;
+}
+
+.proyectos-page .w-1\/2 {
+  flex: 1;
+}
+
+/* Botón */
+.proyectos-page button[type="submit"] {
+  background: linear-gradient(90deg, #95f003, #fffb03);
+  border: none;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 0;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 8px rgba(149, 240, 3, 0.5);
+}
+
+.proyectos-page button[type="submit"]:hover {
+  background: linear-gradient(90deg, #fffb03, #95f003);
+}
+
+/* Tabla */
+.proyectos-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.proyectos-page table th,
+.proyectos-page table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.proyectos-page table th {
+  background: #95f003;
+  color: white;
+  font-weight: 700;
+}
+
+.proyectos-page table tr:hover {
+  background: #f0fdf0;
+}
+
+/* Botón eliminar en tabla */
+.proyectos-page button.bg-red-500 {
+  background: #e53e3e;
+  padding: 5px 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proyectos-page button.bg-red-500:hover {
+  background: #c53030;
+}
+
+/* Footer */
+.proyectos-page footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Letras negras en tabla */
+.proyectos-page table,
+.proyectos-page table th,
+.proyectos-page table td {
+  color: #000 !important;
+}
+
+
+
+
+
