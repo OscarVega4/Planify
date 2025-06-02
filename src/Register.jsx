@@ -33,9 +33,9 @@ const Register = () => {
     contrasena: form.contrasena.trim(),
   };
 
-  register(normalizado);                  // ✔️ guarda usuario
+  register(normalizado);                  
   console.log("Usuario guardado:", localStorage.getItem("user"));
-  navigate("/login");                     // 👈 redirige a Inicio de Sesión
+  navigate("/login");                     
 };
 
   return (

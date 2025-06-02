@@ -17,7 +17,7 @@ const Home = () => {
       <nav className="nav">
         <div className="nav-logo">
           <a href="/">
-            <img src="/Logos/PLANify with rocco.png" alt="PLANIFY" />
+            <img src="img\PLANify with rocco.png"  />
           </a>
         </div>
         <div className="nav-button">
@@ -60,6 +60,8 @@ const Home = () => {
                   <th>Acciones</th>
                 </tr>
               </thead>
+              </table>
+              <table className="styled-2table">
               <tbody>
                 <tr>
                   <td>Proyecto de ejemplo</td>
@@ -68,6 +70,9 @@ const Home = () => {
                   <td>Alta</td>
                   <td>
                     <button className="btn">Ver</button>
+                    </td>
+                  <td>
+                    <button className="btn">Editar</button>
                   </td>
                 </tr>
               </tbody>

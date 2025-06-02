@@ -20,7 +20,7 @@ const Calendario = () => {
       <nav className="nav">
         <div className="nav-logo">
           <a href="/">
-            <img src="/Logos/PLANify with rocco.png" alt="PLANIFY" />
+            <img src="img\PLANify with rocco.png"  />
           </a>
         </div>
         <div className="nav-button">
